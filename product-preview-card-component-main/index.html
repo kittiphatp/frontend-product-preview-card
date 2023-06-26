@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {display: flex; flex-direction: column; align-items: center; margin-top: 100px; background-color: antiquewhite;}
+    .container { display: flex; flex-direction: row; width: 550px; height: 100%; background-color: white; border-radius: 5px;}
+    .container-left img {height: 380px;}
+    .container-right {width: 200px}
+    img {border-radius: 5px 0px 0px 5px;}
+    .container-right {margin: 30px ;}
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container-left">
+      <img src="/images/image-product-desktop.jpg" alt="perfurm-img">
+    </div>
+
+    <div class="container-right">
+      <p style="color: grey; letter-spacing: 8px; font-size: 12px;">PERFUME</p>
+
+      <p style="color: black; font-size: 35px; font-weight: 800; line-height: 0.8;">Gabrielle Essence Eau De Parfum</p>
+
+      <p style="color: grey; font-size: 14px; line-height: 1.2;">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+
+      <span style="color: rgb(0, 128, 75); font-size: 28px; font-weight: 800;">$149.99</span>
+      <span style="color: grey; font-size: 14px; text-decoration: line-through;">$169.99</span>
+
+      <br><br>
+      <button style="text-decoration: none; border: none; border-radius: 5px; height: 40px; width: 200px; background-color: rgb(0, 128, 75); color: white;">Add to Cart</button>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kittiphatp</a>.
+  </div> -->
+</body>
+</html>

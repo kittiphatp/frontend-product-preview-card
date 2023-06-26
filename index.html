@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    /* body */
+    body {
+      background-color: #f3eae3;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* container */
+    .container {
+      width: 600px;
+      height: 450px;
+      background-color: white;
+      border-radius: 15px;
+
+      display: flex;
+      padding: 0;
+      margin: 150px auto 20px auto;
+    }
+
+    .leftcolumn {
+      width: 300px;
+      height: 450px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    .product-image {
+      width: 300px;
+      height: 450px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    .rightcolumn {
+      width: 300px;
+      height: auto;
+      background-color: white;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      padding-left: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .category {
+      font-family: Helvetica;
+      font-size: 12px;
+      letter-spacing: 7px;
+      color: #878a90;
+
+    }
+
+    .product-name {
+      font-family: Georgia, Times, 'Times New Roman', serif  ;
+      font-size: 27px;
+      font-weight: 900;
+      line-height: 1;
+      color: #191d24;
+    }
+
+    .product-desc {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1.15px;
+      line-height: 1.5;
+      color: #7e7e84;
+    }
+
+    .price {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .price-discount {
+      font-family: Times;
+      font-size: 35px;
+      font-weight: 900;
+      color: #417e67;
+      margin-right: 35px;
+    }
+
+    .price-normal {
+      font-family: Arial;
+      font-size: 14px;
+      color: #7e7e84;
+      text-decoration-line: line-through;
+    }
+
+    .btn {
+      width: 232px;
+      height: 46px;
+      border-radius: 15px;
+      background-color: #3d8168;
+      font-family: Arial;
+      font-size: 14px;
+      color: white;
+
+      border-style: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2f6451;
+      transform: translate(0, -1px);
+    }
+
+    .icon-cart {
+      display: inline-block;
+      margin-right: 15px;
+      position: relative;
+      top: 3px;
+    }
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="leftcolumn">
+      <img src="./images/image-product-desktop.jpg" alt="product-image" class="product-image">
+    </div>
+
+    <div class="rightcolumn">
+
+      <div class="category">PERFUME</div>
+      
+      <div class="product-name">
+        Gabrielle <br>
+        Essence Eau <br>
+        De Parfum
+      </div>
+      
+      <div class="product-desc">
+        A floral, solar and voluptuous <br>
+        interpretation composed by <br>
+        Olivier Polge, Perfumer-Creator <br>
+        for the House of CHANEL.
+      </div>
+      
+      <div class="price">
+        <div class="price-discount">$149.99</div>
+        <div class="price-normal">$169.99</div>
+      </div>
+      
+      
+      <button class="btn"><span class="icon-cart"><img src="./images/icon-cart.svg" alt="icon-cart"></span>Add to Cart</button>
+      
+    </div>
+
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kittiphat Pisuittiporn</a>.
+  </div>
+</body>
+</html>
